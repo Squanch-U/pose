@@ -1,0 +1,6 @@
+"""train"""
+
+python train.py --data coco_sleep.yaml --cfg yolov5s6_kpts.yaml --weights /home/cxh/Documents/研究-姿态检测/edgeai-yolov5-yolo-pose/last.pt --batch-size 8 --img 960 --kpt-label
+
+"""test"""
+ python test.py --data coco_sleep.yaml --img 960 --conf 0.5 --iou 0.25 --weights /home/cxh/Documents/研究-姿态检测/edgeai-yolov5-yolo-pose/runs/train/exp15/weights/best.pt --kpt-label
